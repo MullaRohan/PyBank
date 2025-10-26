@@ -29,6 +29,7 @@ This project is completely written in **Python** and is a mini project.
   - `db_handler.py` → File Read/Write  
   - `utils.py` → Helper Functions
 
+![Project Diagram](asset/pyBankDiagram.png)
 
 
 🪪 Developer Info <br>

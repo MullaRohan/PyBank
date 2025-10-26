@@ -42,7 +42,7 @@ class Userhandel:
     def fetchUser(self):
         user = input("Enter username for full details: ").strip()
         matched_rows = user_df[user_df["user_name"] == user]
-        if matched_rows.empty is False:
+        if not matched_rows.empty:
             print(
                 matched_rows.drop(columns=["password", "user_name"]).to_string(
                     index=False

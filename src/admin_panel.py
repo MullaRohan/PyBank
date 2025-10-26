@@ -31,3 +31,6 @@ class AdminPanel:
                 break
             else:
                 print("Invalid choice. Please try again.")
+
+
+AdminPanel()
