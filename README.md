@@ -31,7 +31,7 @@ This project is completely written in **Python** and is a mini project.
 
 
 
-🪪 Developer Info
-👤 Author: @MullaRohan
-📧 Contact: rohanmulla.cs@gmail.com
+🪪 Developer Info <br>
+👤 Author: @MullaRohan <br>
+📧 Contact: rohanmulla.cs@gmail.com <br>
 🪴 License: Open Source (Feel free to use or modify)
