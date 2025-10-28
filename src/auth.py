@@ -17,14 +17,12 @@ class Auth:
     # checking and redirecting user to respective panel
     def userChecking(self):
         user_identity = 0
-        if (
-            self.user in admin_df["user_name"].values
-            and self.passw in admin_df["password"].values
+        if (self.user in admin_df["user_name"].values) and (
+            self.passw in admin_df["password"].values
         ):
             user_identity = 1
-        elif (
-            self.user in user_df["user_name"].values
-            and self.passw in user_df["password"].values
+        elif (self.user in user_df["user_name"].values) and (
+            self.passw in user_df["password"].values
         ):
             user_identity = 2
 
@@ -32,8 +30,14 @@ class Auth:
         if user_identity == 1:
             admin_panel.AdminPanel()
         elif user_identity == 2:
-            user_panel.UserPanel()
+            user_panel.UserPanel(self.user)
+            print(self.user)
         # user not found exiting program to main.py
         else:
             print("Not Found")
             exit()
+
+
+if __name__ == "__main__":
+    p = user_panel.UserPanel()
+    p

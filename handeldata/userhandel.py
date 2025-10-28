@@ -54,5 +54,7 @@ class Userhandel:
             return
 
 
-ch = Userhandel()
-ch.fetchUser()
+if __name__ == "__main__":
+    uh = Userhandel()
+    # uh.addUser()
+    # uh.fetchUser()
